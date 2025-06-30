@@ -1,4 +1,4 @@
-// components/ListaGastos.js
+
 import React from "react";
 
 export default function ListaGastos({ gastos, modificarGasto, categorias }) {

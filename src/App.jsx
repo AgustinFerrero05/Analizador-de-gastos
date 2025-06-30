@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import React, { useState } from "react";
 import "./styles/App.css";
 import Login from "./components/Login";
@@ -19,7 +19,7 @@ const coloresCategorias = {
 };
 
 export default function App() {
-  const [pantalla, setPantalla] = useState("login"); // login | registro | app
+  const [pantalla, setPantalla] = useState("login"); 
   const [usuarioRegistrado, setUsuarioRegistrado] = useState(null);
   const [usuario, setUsuario] = useState(null);
   const [gasto, setGasto] = useState({ descripcion: "", monto: "", categoria: "", fecha: "" });
@@ -30,7 +30,7 @@ export default function App() {
   const [categoriaMayorGasto, setCategoriaMayorGasto] = useState("");
 
   const handleRegistrarUsuario = (datos) => {
-    setUsuarioRegistrado(datos); // Guardamos usuario localmente
+    setUsuarioRegistrado(datos); 
     setPantalla("login");
   };
 
@@ -47,7 +47,7 @@ export default function App() {
     }
   };
 
-  // Cálculo resumen mensual y comparación
+  
   React.useEffect(() => {
     const resumen = gastos.reduce((acc, gasto) => {
       const mes = gasto.fecha.substring(0, 7);

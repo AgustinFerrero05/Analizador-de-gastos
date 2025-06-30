@@ -1,4 +1,4 @@
-// components/RegistroGasto.js
+
 import React from "react";
 
 export default function RegistroGasto({ gasto, setGasto, onRegistrar, categorias }) {

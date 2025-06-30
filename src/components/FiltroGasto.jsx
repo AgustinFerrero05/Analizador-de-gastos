@@ -1,4 +1,4 @@
-// components/FiltroGasto.jsx
+
 import React, { useState } from "react";
 
 export default function FiltroGasto({ setFiltro, categorias }) {
